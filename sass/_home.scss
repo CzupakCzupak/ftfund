@@ -96,8 +96,8 @@
         border: 7px solid $green;
     }
 
-    &-js,
-    &-js-2 {
+    &__swap,
+    &__swap-2 {
         height: 0;
         opacity: 0;
         visibility: hidden;
@@ -130,22 +130,20 @@
     }
 
     &__text {
-        &-1.active,
-        &-2.active {
+        &-cont {
+        }
+        &.active {
             opacity: 1;
             visibility: visible;
         }
-
-        &-1,
-        &-2 {
-            overflow: hidden;
-            opacity: 0;
-            visibility: hidden;
-            height: 100%;
-            max-height: 0;
-            transition-property: visibility, opacity;
-            transition-duration: 0.3s;
-        }
+        z-index: 10;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        height: 100%;
+        max-height: 0;
+        transition-property: visibility, opacity;
+        transition-duration: 0.3s;
 
         &-1 {
             max-width: 577px;

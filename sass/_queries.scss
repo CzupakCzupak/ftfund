@@ -84,10 +84,6 @@
             height: unset;
         }
 
-        &__desc-text {
-            // font-size: 14px;
-        }
-
         &__rect {
             display: none;
         }
@@ -338,12 +334,14 @@
         }
     }
 
-    .circle-left,
-    .circle-right {
-        width: 17px;
-        height: 17px;
-        &.active {
-            border-width: 2px;
+    .circle {
+        &__left,
+        &__right {
+            width: 17px;
+            height: 17px;
+            &.active {
+                border-width: 2px;
+            }
         }
     }
 
@@ -389,6 +387,7 @@
         }
 
         &__cont {
+            gap: unset;
             flex-direction: column-reverse;
         }
 
@@ -409,6 +408,10 @@
             align-items: center;
         }
 
+        &__image {
+            margin-bottom: 42px;
+        }
+
         &__page-1,
         &__page-2 {
             width: 11px;
@@ -417,6 +420,17 @@
             &.active {
                 border-color: $green;
             }
+        }
+    }
+
+    .popup {
+        padding: 24px;
+        width: 100%;
+        &__heading {
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 32px; /* 114.286% */
+            letter-spacing: 0.145px;
         }
     }
 }
@@ -471,6 +485,7 @@
     .header {
         height: 64px;
         &__nav {
+            height: calc(100vh - 64px);
             top: 64px;
         }
     }
@@ -482,14 +497,15 @@
         // margin-bottom: 44px;
     }
 
-    .circle-left {
-        top: 0;
-        left: 0;
-    }
-
-    .circle-right {
-        bottom: 0;
-        right: 0;
+    .circle {
+        &__left {
+            top: 21px;
+            left: 17px;
+        }
+        &__right {
+            bottom: 4px;
+            right: 18px;
+        }
     }
 
     .steps {

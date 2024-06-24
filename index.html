@@ -178,8 +178,11 @@
                             </div>
                             <div class="hero__page-2" data-page="2">&nbsp;</div>
                         </div>
-                        <div class="hero__text">
-                            <div class="hero__text-1 active">
+                        <div class="hero__text-cont">
+                            <div
+                                class="hero__text hero__text-js active"
+                                data-text="0"
+                            >
                                 <h1 class="heading-primary img-1">
                                     Pożyczki&nbsp;gotówkowe
                                     <span class="blue-underline"
@@ -216,7 +219,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="hero__text-2">
+                            <div class="hero__text hero__text-js" data-text="1">
                                 <h1 class="heading-primary img-2">
                                     <span class="blue-underline"
                                         >Nie&nbsp;jesteś</span
@@ -267,7 +270,8 @@
                                     loading="lazy"
                                     width="100%"
                                     height="auto"
-                                    class="hero-js active"
+                                    class="hero__swap hero__swap-js active"
+                                    data-numb="0"
                                 />
                             </picture>
                             <picture>
@@ -281,7 +285,8 @@
                                     loading="lazy"
                                     width="100%"
                                     height="auto"
-                                    class="hero-js-2"
+                                    class="hero__swap hero__swap-js"
+                                    data-numb="1"
                                 />
                             </picture>
                             <div class="circle__right circle__right-js">
@@ -1322,7 +1327,7 @@
                 <div class="popup">
                     <div class="popup__dot"></div>
                     <div class="popup__heading">
-                        Brawo! Jesteś o krok bliżej do wolności finansowej!
+                        Brawo! Jesteś o&nbsp;krok bliżej do wolności finansowej!
                     </div>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -1557,7 +1562,7 @@
             </div>
         </footer>
         <script src="js/splide.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/header.js"></script>
+        <script src="js/core.js"></script>
+        <script src="js/home.js"></script>
     </body>
 </html>
