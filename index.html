@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html lang="PL">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fit Fund</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/splide.min.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <meta name="description" content="FT fund landing page" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__shadow">&nbsp;</div>
+
+            <div class="container">
+                <div class="header__menu">
+                    <a href="index.html">
+                        <div class="header__logo">
+                            <picture>
+                                <source
+                                    media="(min-width:640px)"
+                                    srcset="img/logo.svg"
+                                />
+                                <img
+                                    src="img/logo-mobile.svg"
+                                    alt="logo"
+                                    loading="lazy"
+                                    width="100%"
+                                    height="auto"
+                                />
+                            </picture>
+                        </div>
+                    </a>
+                    <div class="header__nav nav-js">
+                        <ul class="text-sm header__list">
+                            <li class="dropdown dropdown-js">
+                                <div class="dropdown__desc">
+                                    <p class="text-sm">Pożyczki finansowe</p>
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="accordion-nav"
+                                    >
+                                        <g id="Icons/24x24/Close">
+                                            <path
+                                                id="Vector"
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M5.26007 8.87274C5.63157 8.46409 6.26402 8.43397 6.67268 8.80548L12 13.6485L17.3273 8.80548C17.736 8.43397 18.3684 8.46409 18.7399 8.87274C19.1115 9.2814 19.0813 9.91385 18.6727 10.2854L12.6727 15.7399C12.2913 16.0866 11.7088 16.0866 11.3273 15.7399L5.32733 10.2854C4.91868 9.91385 4.88856 9.2814 5.26007 8.87274Z"
+                                                fill=""
+                                            />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <ul class="dropdown__menu">
+                                    <li>
+                                        <a href="#"
+                                            >Pożyczka pod zastaw mieszkania</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#">Pożyczka pod zastaw domu</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            >Pożyczka pod zastaw lokalu
+                                            usługowego</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            >Pożyczka pod zastaw ziemi
+                                            budowlanej</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            >Pożyczka pomostowa i
+                                            inwestycyjna</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"> Blog </a>
+                            </li>
+                            <li>
+                                <a href="#"> Kontakt </a>
+                            </li>
+                        </ul>
+                        <div class="vertical-line">&nbsp;</div>
+                        <div class="header__list-contact">
+                            <div class="header__list-css">
+                                <a href="tel:534923173">
+                                    <div class="d-f jc-b ai-c gap-8">
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="phone-nav"
+                                        >
+                                            <g id="Icons/24x24/Phone">
+                                                <path
+                                                    id="Vector"
+                                                    d="M15.0173 14.1172L13.5502 15.9482C11.2787 14.6135 9.38534 12.7212 8.04934 10.4504L9.88318 8.98343C10.098 8.81134 10.2499 8.57297 10.315 8.3055C10.3801 8.03804 10.3549 7.75655 10.2432 7.50495L8.57165 3.74078C8.45178 3.4708 8.23994 3.25215 7.97388 3.12381C7.70782 2.99547 7.40483 2.96578 7.11892 3.04002L3.93662 3.86553C3.63976 3.94316 3.38167 4.12695 3.21123 4.38209C3.04079 4.63724 2.96982 4.94603 3.01178 5.24998C3.57021 9.22649 5.40806 12.9131 8.2475 15.7525C11.0869 18.5919 14.7736 20.4298 18.7501 20.9882C19.0541 21.0302 19.3629 20.9593 19.6181 20.7888C19.8732 20.6184 20.057 20.3603 20.1346 20.0634L20.9601 16.8814C21.0342 16.5955 21.0045 16.2926 20.8762 16.0265C20.7479 15.7604 20.5295 15.5485 20.2596 15.4284L16.4961 13.7568C16.2444 13.645 15.9628 13.6197 15.6952 13.6849C15.4277 13.7501 15.1893 13.9021 15.0173 14.1172Z"
+                                                    fill=""
+                                                />
+                                            </g>
+                                        </svg>
+                                        <div class="text-md tel-nav">
+                                            534 923 173
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#cta" class="btn btn__blue-white"
+                                    >Złóż wniosek o pożyczkę</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__hamburger hamburger-js">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            class="hamburger-x"
+                        >
+                            <path
+                                d="M3.3266 20.6734C2.89113 20.2379 2.89113 19.5319 3.3266 19.0964L10.423 11.9999L3.32676 4.90358C2.89129 4.46811 2.89129 3.76207 3.32676 3.3266C3.76223 2.89113 4.46826 2.89113 4.90373 3.3266L12 10.4229L19.0963 3.3266C19.5317 2.89113 20.2378 2.89113 20.6732 3.3266C21.1087 3.76207 21.1087 4.46811 20.6732 4.90358L13.577 11.9999L20.6734 19.0964C21.1089 19.5319 21.1089 20.2379 20.6734 20.6734C20.2379 21.1089 19.5319 21.1089 19.0964 20.6734L12 13.5769L4.90357 20.6734C4.4681 21.1089 3.76207 21.1089 3.3266 20.6734Z"
+                                fill="#0E1F40"
+                            />
+                        </svg>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            class="hamburger-primary"
+                        >
+                            <path
+                                d="M3 3C2.44772 3 2 3.44772 2 4C2 4.55228 2.44772 5 3 5H21C21.5523 5 22 4.55228 22 4C22 3.44772 21.5523 3 21 3H3Z"
+                                fill="#0E1F40"
+                            />
+                            <path
+                                d="M3 11C2.44772 11 2 11.4477 2 12C2 12.5523 2.44772 13 3 13H21C21.5523 13 22 12.5523 22 12C22 11.4477 21.5523 11 21 11H3Z"
+                                fill="#0E1F40"
+                            />
+                            <path
+                                d="M2 20C2 19.4477 2.44772 19 3 19H21C21.5523 19 22 19.4477 22 20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20Z"
+                                fill="#0E1F40"
+                            />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="hero">
+                <div class="container">
+                    <div class="hero__cont">
+                        <div class="hero__pagination">
+                            <div class="hero__page-1 active" data-page="1">
+                                &nbsp;
+                            </div>
+                            <div class="hero__page-2" data-page="2">&nbsp;</div>
+                        </div>
+                        <div class="hero__text">
+                            <div class="hero__text-1 active">
+                                <h1 class="heading-primary img-1">
+                                    Pożyczki&nbsp;gotówkowe
+                                    <span class="blue-underline"
+                                        >bez&nbsp;BIK</span
+                                    >
+                                    pod zastaw nieruchomości
+                                </h1>
+                                <div class="hero__btns">
+                                    <a
+                                        href="#"
+                                        class="btn btn__white-blue btn-hero1 btn-gap"
+                                    >
+                                        <p>Zadzwoń do nas</p>
+                                    </a>
+                                    <a
+                                        href="#cta"
+                                        class="btn btn__blue-white btn-hero2"
+                                        ><p>Złóż wniosek o pożyczkę</p>
+                                        <svg
+                                            class="hero__btn-svg"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <g id="Icons/24x24/arrowRight blue">
+                                                <path
+                                                    id="Vector"
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M11.5466 4.28061C11.944 3.89699 12.577 3.90809 12.9606 4.3054L19.7194 11.3054C20.0935 11.6929 20.0935 12.3071 19.7194 12.6946L12.9606 19.6946C12.577 20.0919 11.944 20.103 11.5466 19.7194C11.1493 19.3358 11.1382 18.7027 11.5219 18.3054L16.6444 13L5 13C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11L16.6444 11L11.5219 5.6946C11.1382 5.29729 11.1493 4.66422 11.5466 4.28061Z"
+                                                />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="hero__text-2">
+                                <h1 class="heading-primary img-2">
+                                    <span class="blue-underline"
+                                        >Nie&nbsp;jesteś</span
+                                    >&nbsp;zobowiązany do&nbsp;skorzystania z
+                                    oferty&nbsp;pożyczkowej
+                                </h1>
+                                <div class="hero__btns">
+                                    <a
+                                        href="#"
+                                        class="btn btn__white-blue btn-hero1 btn-gap"
+                                    >
+                                        <p>Zadzwoń do nas</p>
+                                    </a>
+                                    <a
+                                        href="#cta"
+                                        class="btn btn__blue-white btn-hero2"
+                                        ><p>Złóż wniosek o pożyczkę</p>
+                                        <svg
+                                            class="hero__btn-svg"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <g id="Icons/24x24/arrowRight blue">
+                                                <path
+                                                    id="Vector"
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M11.5466 4.28061C11.944 3.89699 12.577 3.90809 12.9606 4.3054L19.7194 11.3054C20.0935 11.6929 20.0935 12.3071 19.7194 12.6946L12.9606 19.6946C12.577 20.0919 11.944 20.103 11.5466 19.7194C11.1493 19.3358 11.1382 18.7027 11.5219 18.3054L16.6444 13L5 13C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11L16.6444 11L11.5219 5.6946C11.1382 5.29729 11.1493 4.66422 11.5466 4.28061Z"
+                                                />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero__image">
+                            <div class="spinning__hero spinning__hero-js"></div>
+
+                            <picture>
+                                <source
+                                    media="(min-width:640px)"
+                                    srcset="img/hero1.png"
+                                />
+                                <img
+                                    src="img/hero1-mobile.png"
+                                    alt="Hero image 1"
+                                    loading="lazy"
+                                    width="100%"
+                                    height="auto"
+                                    class="hero-js active"
+                                />
+                            </picture>
+                            <picture>
+                                <source
+                                    media="(min-width:640px)"
+                                    srcset="img/hero2.png"
+                                />
+                                <img
+                                    src="img/hero2-mobile.png"
+                                    alt="Hero image 2"
+                                    loading="lazy"
+                                    width="100%"
+                                    height="auto"
+                                    class="hero-js-2"
+                                />
+                            </picture>
+                            <div class="circle__right circle__right-js">
+                                &nbsp;
+                            </div>
+                            <div class="circle__left circle__left-js">
+                                &nbsp;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="loans">
+                <div class="container">
+                    <p class="subheading">Pożyczki pozabankowe</p>
+                    <h2 class="heading mb-88">
+                        Pożyczki pod zastaw nieruchomości
+                    </h2>
+                    <div class="loans__boxes">
+                        <div class="loans__box">
+                            <div class="loans__circle">
+                                <picture>
+                                    <source
+                                        media="(min-width:640px)"
+                                        srcset="img/home.svg"
+                                    />
+                                    <img
+                                        src="img/homemobile.svg"
+                                        alt="Home icon"
+                                        loading="lazy"
+                                        width="100%"
+                                        height="auto"
+                                    />
+                                </picture>
+                            </div>
+                            <p class="loans__box-text">
+                                Pożyczka pod zastaw <br />mieszkania
+                            </p>
+                            <div class="loans__box-offer">
+                                <p>Sprawdź ofertę</p>
+                                <svg
+                                    class="loans__box-icon"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <g id="Icons/24x24/arrowRight blue">
+                                        <path
+                                            id="Vector"
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M11.5466 4.28061C11.944 3.89699 12.577 3.90809 12.9606 4.3054L19.7194 11.3054C20.0935 11.6929 20.0935 12.3071 19.7194 12.6946L12.9606 19.6946C12.577 20.0919 11.944 20.103 11.5466 19.7194C11.1493 19.3358 11.1382 18.7027 11.5219 18.3054L16.6444 13L5 13C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11L16.6444 11L11.5219 5.6946C11.1382 5.29729 11.1493 4.66422 11.5466 4.28061Z"
+                                            fill=""
+                                        />
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="loans__box">
+                            <div class="loans__circle">
+                                <picture>
+                                    <source
+                                        media="(min-width:640px)"
+                                        srcset="img/dom-loans.svg"
+                                    />
+                                    <img
+                                        src="img/dom-loans-mobile.svg"
+                                        alt="Home icon"
+                                        loading="lazy"
+                                        width="100%"
+                                        height="auto"
+                                    />
+                                </picture>
+                            </div>
+                            <p class="loans__box-text">
+                                Pożyczka pod zastaw <br />domu
+                            </p>
+                            <div class="loans__box-offer">
+                                <p>Sprawdź ofertę</p>
+                                <svg
+                                    class="loans__box-icon"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <g id="Icons/24x24/arrowRight blue">
+                                        <path
+                                            id="Vector"
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M11.5466 4.28061C11.944 3.89699 12.577 3.90809 12.9606 4.3054L19.7194 11.3054C20.0935 11.6929 20.0935 12.3071 19.7194 12.6946L12.9606 19.6946C12.577 20.0919 11.944 20.103 11.5466 19.7194C11.1493 19.3358 11.1382 18.7027 11.5219 18.3054L16.6444 13L5 13C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11L16.6444 11L11.5219 5.6946C11.1382 5.29729 11.1493 4.66422 11.5466 4.28061Z"
+                                        />
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="loans__box">
+                            <div class="loans__circle">
+                                <picture>
+                                    <source
+                                        media="(min-width:640px)"
+                                        srcset="img/lokal-loans.svg"
+                                    />
+                                    <img
+                                        src="img/lokal-loans-mobile.svg"
+                                        alt="Building icon"
+                                        loading="lazy"
+                                        width="100%"
+                                        height="auto"
+                                    />
+                                </picture>
+                            </div>
+                            <p class="loans__box-text">
+                                Pożyczka pod zastaw <br />
+                                lokalu usługowego
+                            </p>
+                            <div class="loans__box-offer">
+                                <p>Sprawdź ofertę</p>
+                                <svg
+                                    class="loans__box-icon"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <g id="Icons/24x24/arrowRight blue">
+                                        <path
+                                            id="Vector"
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M11.5466 4.28061C11.944 3.89699 12.577 3.90809 12.9606 4.3054L19.7194 11.3054C20.0935 11.6929 20.0935 12.3071 19.7194 12.6946L12.9606 19.6946C12.577 20.0919 11.944 20.103 11.5466 19.7194C11.1493 19.3358 11.1382 18.7027 11.5219 18.3054L16.6444 13L5 13C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11L16.6444 11L11.5219 5.6946C11.1382 5.29729 11.1493 4.66422 11.5466 4.28061Z"
+                                        />
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="loans__box">
+                            <div class="loans__circle">
+                                <picture>
+                                    <source
+                                        media="(min-width:640px)"
+                                        srcset="img/ziemia-loans.svg"
+                                    />
+                                    <img
+                                        src="img/ziemia-loans-mobile.svg"
+                                        alt="Forest icon"
+                                        loading="lazy"
+                                        width="100%"
+                                        height="auto"
+                                    />
+                                </picture>
+                            </div>
+                            <p class="loans__box-text">
+                                Pożyczka pod zastaw <br />
+                                ziemi budowlanej
+                            </p>
+                            <div class="loans__box-offer">
+                                <p>Sprawdź ofertę</p>
+                                <svg
+                                    class="loans__box-icon"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <g id="Icons/24x24/arrowRight blue">
+                                        <path
+                                            id="Vector"
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M11.5466 4.28061C11.944 3.89699 12.577 3.90809 12.9606 4.3054L19.7194 11.3054C20.0935 11.6929 20.0935 12.3071 19.7194 12.6946L12.9606 19.6946C12.577 20.0919 11.944 20.103 11.5466 19.7194C11.1493 19.3358 11.1382 18.7027 11.5219 18.3054L16.6444 13L5 13C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11L16.6444 11L11.5219 5.6946C11.1382 5.29729 11.1493 4.66422 11.5466 4.28061Z"
+                                        />
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="loans__box">
+                            <div class="loans__circle">
+                                <picture>
+                                    <source
+                                        media="(min-width:640px)"
+                                        srcset="img/handshake-loans.svg"
+                                    />
+                                    <img
+                                        src="img/handshake-loans-mobile.svg"
+                                        alt="Handshake icon"
+                                        loading="lazy"
+                                        width="100%"
+                                        height="auto"
+                                    />
+                                </picture>
+                            </div>
+                            <p class="loans__box-text">
+                                Pożyczki pomostowe i&nbsp;inwestycyjne
+                            </p>
+                            <div class="loans__box-offer">
+                                <p>Sprawdź ofertę</p>
+                                <svg
+                                    class="loans__box-icon"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <g id="Icons/24x24/arrowRight blue">
+                                        <path
+                                            id="Vector"
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M11.5466 4.28061C11.944 3.89699 12.577 3.90809 12.9606 4.3054L19.7194 11.3054C20.0935 11.6929 20.0935 12.3071 19.7194 12.6946L12.9606 19.6946C12.577 20.0919 11.944 20.103 11.5466 19.7194C11.1493 19.3358 11.1382 18.7027 11.5219 18.3054L16.6444 13L5 13C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11L16.6444 11L11.5219 5.6946C11.1382 5.29729 11.1493 4.66422 11.5466 4.28061Z"
+                                        />
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                        <picture>
+                            <source
+                                media="(min-width:640px)"
+                                srcset="img/loans-ic.svg"
+                            />
+                            <img
+                                src="img/loans-ic-mobile.svg"
+                                class="loans__icon"
+                                alt="Two circles icon"
+                                loading="lazy"
+                                width="100%"
+                                height="auto"
+                            />
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="help">
+                <div class="container">
+                    <p class="subheading ta-c">Pożyczki pozabankowe</p>
+                    <h2 class="help__heading heading mb-104 ta-c">
+                        Pomagamy w uwalnianiu się od problemów finansowych
+                    </h2>
+                    <div class="help__box">
+                        <div class="help__desc">
+                            <p class="subheading">Kim jesteśmy</p>
+                            <div class="help__heading">
+                                Krótki headline ze słowem kluczowym
+                            </div>
+                            <div class="help__desc-text">
+                                Powiedz nam, co Cię trapi, a dopasujemy do
+                                Twojej sytuacji najlepsze możliwe rozwiązanie.
+                                Jeśli posiadasz tzw. „trudną nieruchomość” i
+                                chcesz ją sprzedać - świetnie trafiłeś. A może
+                                chcesz wziąć pożyczkę pod zastaw swoich czterech
+                                kątów? W tym także Cię wesprzemy. Witamy w
+                                ekipie od zadań specjalnych.
+                            </div>
+                            <div class="help__btns">
+                                <a href="#cta" class="btn btn__white-blue"
+                                    >Złóż wniosek o pożyczkę</a
+                                >
+                                <a href="#" class="btn btn__blue-white btn-gap"
+                                    ><p>Zadzwoń do nas</p>
+                                    <svg
+                                        class="hero__btn-svg"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <g id="Icons/24x24/arrowRight blue">
+                                            <path
+                                                id="Vector"
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M11.5466 4.28061C11.944 3.89699 12.577 3.90809 12.9606 4.3054L19.7194 11.3054C20.0935 11.6929 20.0935 12.3071 19.7194 12.6946L12.9606 19.6946C12.577 20.0919 11.944 20.103 11.5466 19.7194C11.1493 19.3358 11.1382 18.7027 11.5219 18.3054L16.6444 13L5 13C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11L16.6444 11L11.5219 5.6946C11.1382 5.29729 11.1493 4.66422 11.5466 4.28061Z"
+                                            />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="help__image">
+                            <picture>
+                                <source
+                                    media="(min-width:640px)"
+                                    srcset="img/help.png"
+                                />
+                                <img
+                                    src="img/helpmobile.png"
+                                    alt="Reinforcements"
+                                    loading="lazy"
+                                    width="100%"
+                                    height="auto"
+                                />
+                            </picture>
+                            <div class="help__rect">&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="subheading ta-c">Jak wygląda współpraca z nami</p>
+            <h2 class="steps__section-heading heading ta-c">
+                Kroki procesu pożyczkowego
+            </h2>
+            <div class="steps">
+                <div class="steps__background"></div>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 336 336"
+                    fill="none"
+                    class="side-svg"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M336 84C196.824 84 84 196.824 84 336H0C0 150.432 150.432 0 336 0V84Z"
+                        fill="#1358C1"
+                    />
+                </svg>
+                <div class="container steps__container">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="54"
+                        height="54"
+                        viewBox="0 0 54 54"
+                        fill="none"
+                        class="steps-dot"
+                    >
+                        <circle cx="27" cy="27" r="27" fill="#8CC540" />
+                    </svg>
+                    <div class="steps__row">
+                        <div class="steps__image">
+                            <picture>
+                                <source
+                                    media="(min-width:640px)"
+                                    srcset="img/steps1.png"
+                                />
+                                <img
+                                    src="img/step1mobile.png"
+                                    alt="Step 1"
+                                    loading="lazy"
+                                    width="100%"
+                                    height="auto"
+                                />
+                            </picture>
+                        </div>
+                        <div class="steps__box">
+                            <p class="steps-subheading">Krok 1</p>
+                            <p class="steps-heading">
+                                Kontakt z nami i rozmowa z&nbsp;doradcą
+                            </p>
+                            <p class="steps-desc">
+                                Pożyczka pod zastaw jest rozwiązaniem dla osób,
+                                które pragną elastycznego finansowania, nie mogą
+                                otrzymać kredytu w banku lub oczekują szybkiego
+                                finansowania, z pominięciem wielu procedur
+                                bankowych.
+                            </p>
+                            <div class="steps-check">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M8.7203 16.0455L4.4531 11.692L3 13.1641L8.7203 19L21 6.47204L19.5571 5L8.7203 16.0455Z"
+                                        fill="#8CC540"
+                                    />
+                                </svg>
+                                <p>Prosty do wypełniania formularz</p>
+                            </div>
+                            <div class="steps-check">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M8.7203 16.0455L4.4531 11.692L3 13.1641L8.7203 19L21 6.47204L19.5571 5L8.7203 16.0455Z"
+                                        fill="#8CC540"
+                                    />
+                                </svg>
+                                <p>Darmowa konsultacja telefoniczna</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="steps__row reverse">
+                        <div class="steps__image">
+                            <picture>
+                                <source
+                                    media="(min-width:640px)"
+                                    srcset="img/steps2.png"
+                                />
+                                <img
+                                    src="img/step2mobile.png"
+                                    alt="Step 2"
+                                    loading="lazy"
+                                    width="100%"
+                                    height="auto"
+                                />
+                            </picture>
+                        </div>
+                        <div class="steps__box">
+                            <p class="steps-subheading">Krok 2</p>
+                            <p class="steps-heading">
+                                Wycena nieruchomości przez rzeczoznawcę
+                            </p>
+                            <p class="steps-desc">
+                                Pożyczka pod zastaw jest rozwiązaniem dla osób,
+                                które pragną elastycznego finansowania, nie mogą
+                                otrzymać kredytu w banku lub oczekują szybkiego
+                                finansowania, z pominięciem wielu procedur
+                                bankowych.
+                            </p>
+                            <div class="steps-check">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M8.7203 16.0455L4.4531 11.692L3 13.1641L8.7203 19L21 6.47204L19.5571 5L8.7203 16.0455Z"
+                                        fill="#8CC540"
+                                    />
+                                </svg>
+                                <p>
+                                    Nie płacisz żadnej wstępnej opłaty wstępnej
+                                </p>
+                            </div>
+                            <div class="steps-check">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M8.7203 16.0455L4.4531 11.692L3 13.1641L8.7203 19L21 6.47204L19.5571 5L8.7203 16.0455Z"
+                                        fill="#8CC540"
+                                    />
+                                </svg>
+                                <p>
+                                    Nie jesteś zobowiązany do skorzystania z
+                                    oferty
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="steps__row">
+                        <div class="steps__image">
+                            <picture>
+                                <source
+                                    media="(min-width:640px)"
+                                    srcset="img/steps3.png"
+                                />
+                                <img
+                                    src="img/step3mobile.png"
+                                    alt="Step 3"
+                                    loading="lazy"
+                                    width="100%"
+                                    height="auto"
+                                />
+                            </picture>
+                        </div>
+                        <div class="steps__box">
+                            <p class="steps-subheading">Krok 3</p>
+                            <p class="steps-heading">
+                                Podpisanie umowy w Kancelari Notarialnej i
+                                wypłata
+                            </p>
+                            <p class="steps-desc">
+                                Pożyczka pod zastaw jest rozwiązaniem dla osób,
+                                które pragną elastycznego finansowania, nie mogą
+                                otrzymać kredytu w banku lub oczekują szybkiego
+                                finansowania, z pominięciem wielu procedur
+                                bankowych.
+                            </p>
+                            <div class="steps-check">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M8.7203 16.0455L4.4531 11.692L3 13.1641L8.7203 19L21 6.47204L19.5571 5L8.7203 16.0455Z"
+                                        fill="#8CC540"
+                                    />
+                                </svg>
+                                <p>
+                                    Umowa pożyczki podpisana w kancelarii
+                                    notarialnej
+                                </p>
+                            </div>
+                            <div class="steps-check">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M8.7203 16.0455L4.4531 11.692L3 13.1641L8.7203 19L21 6.47204L19.5571 5L8.7203 16.0455Z"
+                                        fill="#8CC540"
+                                    />
+                                </svg>
+                                <p>Bezpieczna transakcja u Notariusza</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="conditions">
+                <div class="container">
+                    <div class="conditions__box d-f jc-b ai-fs a">
+                        <div class="conditions__headings">
+                            <p class="subheading">
+                                Jak wygląda współpraca z nami
+                            </p>
+                            <h2 class="heading">Kroki procesu pożyczkowego</h2>
+                        </div>
+                        <div class="conditions__desc">
+                            <p class="big">
+                                Pożyczka może być udzielona na okres od 3 - 60
+                                miesięcy. Przy czym jest możliwość zastosowania
+                                w niektórych przypadkach dłuższego terminu.
+                                Warunki spłaty mogą być dostosowane do potrzeb a
+                                także propozycji pożyczkobiorcy.
+                            </p>
+                            <p>
+                                Możliwa jest więc zarówno spłata w miesięcznych
+                                ratach (odsetki + kapitał lub same odsetki a
+                                kapitał na koniec) jak również spłata całości na
+                                koniec okresu umowy. Finasowanie może być
+                                również uruchamiane w transzach.
+                            </p>
+                            <p>
+                                Rozwiązanie charakteryzuje się nie tylko
+                                elastycznymi warunki spłaty ale również
+                                atrakcyjnymi i konkurencyjnymi warunkami
+                                finansowymi. Proszę jednak pamiętać, że pożyczki
+                                pozabankowe będą droższe w stosunku do pożyczek
+                                bankowych.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="conditions__interests">
+                        <div class="conditions__interests-heading">
+                            Jesteś zainteresowany naszą ofertą i chcesz
+                            porozmawiać o możliwości współpracy?
+                        </div>
+                        <a href="#cta" class="btn btn__white-blue"
+                            >Złóż wniosek o pożyczkę</a
+                        >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="46"
+                            height="46"
+                            viewBox="0 0 46 46"
+                            fill="none"
+                            class="filled-circle"
+                        >
+                            <circle cx="23" cy="23" r="23" fill="#8CC540" />
+                        </svg>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="46"
+                            height="46"
+                            viewBox="0 0 46 46"
+                            fill="none"
+                            class="outline-circle"
+                        >
+                            <circle
+                                cx="23"
+                                cy="23"
+                                r="20.5"
+                                stroke="#8CC540"
+                                stroke-width="5"
+                            />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="stats">
+                <div class="container">
+                    <p class="stats__subheading subheading">Overline</p>
+                    <h2 class="stats__heading mb-80 heading">
+                        Krótki headline ze słowem
+                    </h2>
+                </div>
+                <section
+                    class="stats__splide splide"
+                    aria-label="Splide Basic HTML Example"
+                >
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="circle__box">
+                                    <div>
+                                        <h6 class="circle__box-heading">
+                                            12 lat
+                                        </h6>
+                                        <p>
+                                            Rozwiązujemy problemy naszych
+                                            klientów
+                                        </p>
+                                    </div>
+                                    <div class="stats__dot"></div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="circle__box">
+                                    <div>
+                                        <h6 class="circle__box-heading">
+                                            Numer #1
+                                        </h6>
+                                        <p>
+                                            Numer jeden w Polsce wbranży
+                                            pożyczkowej
+                                        </p>
+                                    </div>
+                                    <div class="stats__dot"></div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="circle__box">
+                                    <div>
+                                        <h6 class="circle__box-heading">
+                                            Ponad 1400
+                                        </h6>
+                                        <p>
+                                            Tylu Klientów powierzyło nam swoje
+                                            finanse
+                                        </p>
+                                    </div>
+                                    <div class="stats__dot"></div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="circle__box">
+                                    <div>
+                                        <h6 class="circle__box-heading">
+                                            12 lat
+                                        </h6>
+                                        <p>
+                                            Rozwiązujemy problemy naszych
+                                            klientów
+                                        </p>
+                                    </div>
+                                    <div class="stats__dot"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div class="opinions rel">
+                <div class="container">
+                    <p class="opinions__subheading subheading">Opinie o nas</p>
+                    <h2 class="opinions__heading mb-80 heading">
+                        Poznaj opinie naszych Klientów
+                    </h2>
+                </div>
+                <section
+                    class="opinions__splide splide"
+                    aria-label="Splide Basic HTML Example"
+                >
+                    <div class="splide__arrows">
+                        <button class="splide__arrow splide__arrow--prev">
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M11.5466 4.28061C11.944 3.89699 12.577 3.90809 12.9606 4.3054L19.7194 11.3054C20.0935 11.6929 20.0935 12.3071 19.7194 12.6946L12.9606 19.6946C12.577 20.0919 11.944 20.103 11.5466 19.7194C11.1493 19.3358 11.1382 18.7027 11.5219 18.3054L16.6444 13L5 13C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11L16.6444 11L11.5219 5.6946C11.1382 5.29729 11.1493 4.66422 11.5466 4.28061Z"
+                                    fill="#323F58"
+                                />
+                            </svg>
+                        </button>
+                        <button class="splide__arrow splide__arrow--next">
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M11.5466 4.28061C11.944 3.89699 12.577 3.90809 12.9606 4.3054L19.7194 11.3054C20.0935 11.6929 20.0935 12.3071 19.7194 12.6946L12.9606 19.6946C12.577 20.0919 11.944 20.103 11.5466 19.7194C11.1493 19.3358 11.1382 18.7027 11.5219 18.3054L16.6444 13L5 13C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11L16.6444 11L11.5219 5.6946C11.1382 5.29729 11.1493 4.66422 11.5466 4.28061Z"
+                                    fill="#323F58"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="opinions__slide splide__slide">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="36"
+                                    height="26"
+                                    viewBox="0 0 36 26"
+                                    fill="none"
+                                    class="opinions__icon"
+                                >
+                                    <path
+                                        d="M2.57143 26L10.2857 26L15.4286 15.6L15.4286 1.34881e-06L0 0L-1.3638e-06 15.6L7.71428 15.6L2.57143 26ZM23.1429 26L30.8571 26L36 15.6L36 3.14722e-06L20.5714 1.79841e-06L20.5714 15.6L28.2857 15.6L23.1429 26Z"
+                                        fill="#004BBC"
+                                    />
+                                </svg>
+                                <div class="opinions__desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Id velit eget tempus donec
+                                    blandit rutrum habitasses. Nibh donec mollis
+                                    cursus nunc. Tortor, velit, magna nec
+                                    porttitor. Ipsum commodo nunc, in quam
+                                    risus, loremu condimentum adipiscing diam
+                                    etiam.
+                                </div>
+                                <div class="opinions__name">Filip Tyński</div>
+                                <div class="opinions__occupation">
+                                    Pracownik fizyczny
+                                </div>
+                            </li>
+                            <li class="opinions__slide splide__slide">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="36"
+                                    height="26"
+                                    viewBox="0 0 36 26"
+                                    fill="none"
+                                    class="opinions__icon"
+                                >
+                                    <path
+                                        d="M2.57143 26L10.2857 26L15.4286 15.6L15.4286 1.34881e-06L0 0L-1.3638e-06 15.6L7.71428 15.6L2.57143 26ZM23.1429 26L30.8571 26L36 15.6L36 3.14722e-06L20.5714 1.79841e-06L20.5714 15.6L28.2857 15.6L23.1429 26Z"
+                                        fill="#004BBC"
+                                    />
+                                </svg>
+                                <div class="opinions__desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Id velit eget tempus donec
+                                    blandit rutrum habitasses. Nibh donec mollis
+                                    cursus nunc. Tortor, velit, magna nec
+                                    porttitor. Ipsum commodo nunc, in quam
+                                    risus, loremu condimentum adipiscing diam
+                                    etiam.
+                                </div>
+                                <div class="opinions__name">Filip Tyński</div>
+                                <div class="opinions__occupation">
+                                    Pracownik fizyczny
+                                </div>
+                            </li>
+                            <li class="opinions__slide splide__slide">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="36"
+                                    height="26"
+                                    viewBox="0 0 36 26"
+                                    fill="none"
+                                    class="opinions__icon"
+                                >
+                                    <path
+                                        d="M2.57143 26L10.2857 26L15.4286 15.6L15.4286 1.34881e-06L0 0L-1.3638e-06 15.6L7.71428 15.6L2.57143 26ZM23.1429 26L30.8571 26L36 15.6L36 3.14722e-06L20.5714 1.79841e-06L20.5714 15.6L28.2857 15.6L23.1429 26Z"
+                                        fill="#004BBC"
+                                    />
+                                </svg>
+                                <div class="opinions__desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Id velit eget tempus donec
+                                    blandit rutrum habitasses. Nibh donec mollis
+                                    cursus nunc. Tortor, velit, magna nec
+                                    porttitor. Ipsum commodo nunc, in quam
+                                    risus, loremu condimentum adipiscing diam
+                                    etiam.
+                                </div>
+                                <div class="opinions__name">Filip Tyński</div>
+                                <div class="opinions__occupation">
+                                    Pracownik fizyczny
+                                </div>
+                            </li>
+                            <li class="opinions__slide splide__slide">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="36"
+                                    height="26"
+                                    viewBox="0 0 36 26"
+                                    fill="none"
+                                    class="opinions__icon"
+                                >
+                                    <path
+                                        d="M2.57143 26L10.2857 26L15.4286 15.6L15.4286 1.34881e-06L0 0L-1.3638e-06 15.6L7.71428 15.6L2.57143 26ZM23.1429 26L30.8571 26L36 15.6L36 3.14722e-06L20.5714 1.79841e-06L20.5714 15.6L28.2857 15.6L23.1429 26Z"
+                                        fill="#004BBC"
+                                    />
+                                </svg>
+                                <div class="opinions__desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Id velit eget tempus donec
+                                    blandit rutrum habitasses. Nibh donec mollis
+                                    cursus nunc. Tortor, velit, magna nec
+                                    porttitor. Ipsum commodo nunc, in quam
+                                    risus, loremu condimentum adipiscing diam
+                                    etiam.
+                                </div>
+                                <div class="opinions__name">Filip Tyński</div>
+                                <div class="opinions__occupation">
+                                    Pracownik fizyczny
+                                </div>
+                            </li>
+                            <li class="opinions__slide splide__slide">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="36"
+                                    height="26"
+                                    viewBox="0 0 36 26"
+                                    fill="none"
+                                    class="opinions__icon"
+                                >
+                                    <path
+                                        d="M2.57143 26L10.2857 26L15.4286 15.6L15.4286 1.34881e-06L0 0L-1.3638e-06 15.6L7.71428 15.6L2.57143 26ZM23.1429 26L30.8571 26L36 15.6L36 3.14722e-06L20.5714 1.79841e-06L20.5714 15.6L28.2857 15.6L23.1429 26Z"
+                                        fill="#004BBC"
+                                    />
+                                </svg>
+                                <div class="opinions__desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Id velit eget tempus donec
+                                    blandit rutrum habitasses. Nibh donec mollis
+                                    cursus nunc. Tortor, velit, magna nec
+                                    porttitor. Ipsum commodo nunc, in quam
+                                    risus, loremu condimentum adipiscing diam
+                                    etiam.
+                                </div>
+                                <div class="opinions__name">Filip Tyński</div>
+                                <div class="opinions__occupation">
+                                    Pracownik fizyczny
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div class="cta" id="cta">
+                <div class="container">
+                    <div class="cta__shape">&nbsp;</div>
+                    <p class="cta__subheading subheading ta-c">
+                        Formularz pożyczkowy
+                    </p>
+                    <h2 class="cta__heading heading mb-88 ta-c">
+                        Złóż wniosek o pożyczkę
+                    </h2>
+                    <div class="cta__row">
+                        <div class="cta__image">
+                            <picture>
+                                <source
+                                    media="(min-width:640px)"
+                                    srcset="img/ctaimage.png"
+                                />
+                                <img
+                                    src="img/ctamobile.png"
+                                    alt="Man with crossed hands"
+                                    loading="lazy"
+                                    width="100%"
+                                    height="auto"
+                                />
+                            </picture>
+                        </div>
+                        <form class="cta__form cta__form-js">
+                            <div class="cta__dropdown">
+                                <p class="dropdown-value">
+                                    Wniosek o pożyczkę pod zastaw nieruchomości
+                                </p>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M5.26007 8.87274C5.63157 8.46409 6.26402 8.43397 6.67268 8.80548L12 13.6485L17.3273 8.80548C17.736 8.43397 18.3684 8.46409 18.7399 8.87274C19.1115 9.2814 19.0813 9.91385 18.6727 10.2854L12.6727 15.7399C12.2913 16.0866 11.7088 16.0866 11.3273 15.7399L5.32733 10.2854C4.91868 9.91385 4.88856 9.2814 5.26007 8.87274Z"
+                                        fill="#0E1F40"
+                                    />
+                                </svg>
+                                <input
+                                    type="hidden"
+                                    name="dropdown"
+                                    value="Wniosek o pożyczkę pod zastaw nieruchomości"
+                                />
+                                <ul class="cta__dropdown-list">
+                                    <li class="cta-option">
+                                        Pożyczka pod zastaw mieszkania
+                                    </li>
+                                    <li class="cta-option">
+                                        Pożyczka pod pod zastaw domu
+                                    </li>
+                                    <li class="cta-option">
+                                        Pożyczka pod pod zastaw lokalu
+                                        usługowego
+                                    </li>
+                                    <li class="cta-option">
+                                        Pożyczka pod pod zastaw ziemi budowlanej
+                                    </li>
+                                    <li class="cta-option">
+                                        Pożyczka pomostową i inwestycyjną
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="reg__ex-parent reg__ex-parent-js">
+                                <input
+                                    type="text"
+                                    class="cta__input reg__ex-name reg__ex-name-js"
+                                    name="imie"
+                                    required
+                                    value=""
+                                />
+                                <label for="imie" class="cta__label"
+                                    >Imię i nazwisko</label
+                                >
+                                <div class="reg__ex-wrong">
+                                    Podaj imię i nazwisko!
+                                </div>
+                            </div>
+                            <div class="reg__ex-parent reg__ex-parent-js">
+                                <input
+                                    type="text"
+                                    class="cta__input reg__ex-email reg__ex-email-js"
+                                    name="email"
+                                    required
+                                    value=""
+                                />
+                                <label for="email" class="cta__label"
+                                    >Adres e-mail</label
+                                >
+                                <div class="reg__ex-wrong">
+                                    Podaj prawidłowy adres e-mail
+                                </div>
+                            </div>
+                            <div class="reg__ex-parent reg__ex-parent-js">
+                                <input
+                                    type="text"
+                                    class="cta__input reg__ex-phone reg__ex-phone-js"
+                                    name="tel"
+                                    required
+                                    value=""
+                                />
+                                <label for="tel" class="cta__label"
+                                    >Telefon komórkowy</label
+                                >
+                                <div class="reg__ex-wrong">
+                                    Nieprawidłowy numer telefonu
+                                </div>
+                            </div>
+                            <div class="reg__ex-parent reg__ex-parent-js area">
+                                <textarea
+                                    name="tresc"
+                                    class="cta__textarea reg__ex-textarea reg__ex-textarea-js"
+                                    required
+                                ></textarea>
+                                <label
+                                    for="tresc"
+                                    class="cta__label textarea__label"
+                                    >Treść</label
+                                >
+                                <div class="reg__ex-wrong">
+                                    Podaj poprawną treść wiadomości. Co najmniej
+                                    2 znaki.
+                                </div>
+                            </div>
+                            <p class="cta__information">
+                                Wszystkie pola w formularzu są obowiązkowe
+                            </p>
+                            <div class="checkbox__parent checkbox__parent-js">
+                                <div class="cta__checkbox-cont">
+                                    <div
+                                        class="checkbox__custom checkbox__custom-js"
+                                    ></div>
+                                    <input
+                                        type="checkbox"
+                                        name="consent"
+                                        id="consent"
+                                        class="cta__checkbox cta__checkbox-js"
+                                        required
+                                    />
+                                    <p class="cta__consent cta__consent-js">
+                                        Wyrażam zgodę na przetwarzanie moich
+                                        danych osobowych podanych w tym
+                                        formularzu, a także Akceptuję Politykę
+                                        prywatności.
+                                    </p>
+                                </div>
+                                <div class="reg__ex-wrong checkbox__wrong">
+                                    Zgoda jest wymagana
+                                </div>
+                            </div>
+                            <div class="cta__btns">
+                                <input
+                                    type="submit"
+                                    value="Złóż wniosek na pożyczke"
+                                    class="btn btn__white-blue cta__submit"
+                                />
+                                <a href="#" class="btn btn__blue-white btn-gap"
+                                    ><p>Zadzwoń do nas</p>
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="hero__btn-svg"
+                                    >
+                                        <g id="Icons/24x24/arrowRight blue">
+                                            <path
+                                                id="Vector"
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M11.5466 4.28061C11.944 3.89699 12.577 3.90809 12.9606 4.3054L19.7194 11.3054C20.0935 11.6929 20.0935 12.3071 19.7194 12.6946L12.9606 19.6946C12.577 20.0919 11.944 20.103 11.5466 19.7194C11.1493 19.3358 11.1382 18.7027 11.5219 18.3054L16.6444 13L5 13C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11L16.6444 11L11.5219 5.6946C11.1382 5.29729 11.1493 4.66422 11.5466 4.28061Z"
+                                                fill=""
+                                            />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="popup__container">
+                <div class="popup">
+                    <div class="popup__dot"></div>
+                    <div class="popup__heading">
+                        Brawo! Jesteś o krok bliżej do wolności finansowej!
+                    </div>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        class="popup__exit"
+                    >
+                        <path
+                            d="M3.3266 20.6734C2.89113 20.2379 2.89113 19.5319 3.3266 19.0964L10.423 11.9999L3.32676 4.90358C2.89129 4.46811 2.89129 3.76207 3.32676 3.3266C3.76223 2.89113 4.46826 2.89113 4.90373 3.3266L12 10.4229L19.0963 3.3266C19.5317 2.89113 20.2378 2.89113 20.6732 3.3266C21.1087 3.76207 21.1087 4.46811 20.6732 4.90358L13.577 11.9999L20.6734 19.0964C21.1089 19.5319 21.1089 20.2379 20.6734 20.6734C20.2379 21.1089 19.5319 21.1089 19.0964 20.6734L12 13.5769L4.90357 20.6734C4.4681 21.1089 3.76207 21.1089 3.3266 20.6734Z"
+                            fill="#0E1F40"
+                        />
+                    </svg>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <a href="#" class="footer__up">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    class="footer__icon"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M6.55418 12.4468C6.21249 12.1051 6.21249 11.5511 6.55418 11.2094L11.3815 6.38204C11.5456 6.21795 11.7682 6.12577 12.0002 6.12577C12.2323 6.12577 12.4548 6.21795 12.6189 6.38204L17.4463 11.2094C17.788 11.5511 17.788 12.1051 17.4463 12.4468C17.1046 12.7885 16.5506 12.7885 16.2089 12.4468L12.8752 9.11306L12.8752 17C12.8752 17.4833 12.4834 17.875 12.0002 17.875C11.517 17.875 11.1253 17.4833 11.1253 17L11.1253 9.11306L7.79156 12.4468C7.44987 12.7885 6.89587 12.7885 6.55418 12.4468Z"
+                        fill="white"
+                    />
+                </svg>
+            </a>
+            <div class="container">
+                <div class="footer__top">
+                    <div class="footer__side-l">
+                        <a href="index.html">
+                            <picture>
+                                <source
+                                    media="(min-width:640px)"
+                                    srcset="img/footer-logo.svg"
+                                />
+                                <img
+                                    src="img/footer-logo-mobile.svg"
+                                    alt="logo"
+                                    loading="lazy"
+                                    width="100%"
+                                    height="auto"
+                                />
+                            </picture>
+                        </a>
+                        <div class="footer__phones">
+                            <a href="tel:534023173">
+                                <span>tel:</span>
+                                534 023 173
+                            </a>
+                            <a href="fax:534023173">
+                                <span>fax:</span>
+                                534 023 173
+                            </a>
+                            <a href="mailto:biuro@ftfund.pl" class="hidden-mail"
+                                >biuro@ftfund.pl</a
+                            >
+                        </div>
+                    </div>
+                    <div class="footer__lists">
+                        <div class="footer__list">
+                            <p class="footer__list-heading">
+                                Poradnik pożyczkobiorcy
+                            </p>
+                            <ul>
+                                <li>
+                                    <a href="#" class="footer__list-anchor"
+                                        >Pozabankowe pożyczki ratalne - kiedy
+                                        warto?</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__list-anchor"
+                                        >Na czym polega leasing
+                                        nieruchomości?</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__list-anchor"
+                                        >Pożyczki prywatne - jak to działa?</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__list-anchor"
+                                        >Pożyczka pozabankowa - czy dostanie
+                                        każdy?</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="footer__list-heading">Pożyczki</p>
+                            <ul>
+                                <li>
+                                    <a href="#" class="footer__list-anchor"
+                                        >Pożyczka pod zastaw lokalu
+                                        usługowego</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__list-anchor"
+                                        >Pożyczka pod zastaw domu</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__list-anchor"
+                                        >Pożyczka pod zastaw mieszkania</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__list-anchor"
+                                        >Pożyczka pomostowa</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="footer__list-heading">Kategorie</p>
+                            <ul>
+                                <li>
+                                    <a href="#" class="footer__list-anchor"
+                                        >Blog</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__list-anchor"
+                                        >Pożyczki pod zastaw</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__list-anchor"
+                                        >Pożyczki prywatne</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__side-r">
+                        <p>Napisz do nas</p>
+                        <a href="mailto:biuro@ftfund.pl">biuro@ftfund.pl</a>
+                    </div>
+                </div>
+                <div class="footer__rights">
+                    <div class="footer__rights-text">
+                        <a href="#" class="footer__list-anchor"
+                            >© FTFUND 2022 - All rights reserved.</a
+                        >
+                        <a href="#" class="footer__list-anchor"
+                            >Polityka prywatności</a
+                        >
+                    </div>
+                    <div class="footer__socials">
+                        <a
+                            href="https://www.facebook.com/"
+                            target="_blank"
+                            rel="nofollow"
+                            class="footer__social"
+                        >
+                            <svg
+                                class="footer__social-icon"
+                                width="18"
+                                height="18"
+                                viewBox="0 0 18 18"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <g id="Icons" clip-path="url(#clip0_2418_1898)">
+                                    <path
+                                        id="Vector"
+                                        d="M7.59387 17.9142V11.6256H5.30812V9.02344H7.59387V7.04018C7.59387 4.78353 8.93799 3.53814 10.9934 3.53814C11.9781 3.53814 13.0083 3.71406 13.0083 3.71406V5.92894H11.873C10.7542 5.92894 10.4061 6.62378 10.4061 7.33507V9.02344H12.902L12.5033 11.6256H10.4061V17.9142C14.7088 17.2392 18 13.5157 18 9.02344C18 4.05287 13.9706 0.0234375 9 0.0234375C4.02944 0.0234375 0 4.05287 0 9.02344C0 13.5157 3.29121 17.2392 7.59387 17.9142Z"
+                                    />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2418_1898">
+                                        <rect width="18" height="18" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/feed/"
+                            target="_blank"
+                            rel="nofollow"
+                            class="footer__social"
+                        >
+                            <svg
+                                class="footer__social-icon"
+                                width="18"
+                                height="18"
+                                viewBox="0 0 18 18"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M2.05528 0.898438H15.9416C16.2484 0.898438 16.5427 1.02032 16.7596 1.23727C16.9766 1.45422 17.0984 1.74846 17.0984 2.05528V15.9416C17.0984 16.2484 16.9766 16.5427 16.7596 16.7596C16.5427 16.9766 16.2484 17.0984 15.9416 17.0984H2.05528C1.74847 17.0984 1.45422 16.9766 1.23727 16.7596C1.02032 16.5427 0.898438 16.2484 0.898438 15.9416V2.05528C0.898438 1.74846 1.02032 1.45422 1.23727 1.23727C1.45422 1.02032 1.74847 0.898438 2.05528 0.898438ZM3.62994 5.47463C3.89471 5.66127 4.21776 5.74649 4.54014 5.71474C4.86253 5.68299 5.16274 5.53639 5.38602 5.30168C5.60929 5.06698 5.74074 4.75982 5.75636 4.43626C5.77199 4.11269 5.67076 3.7943 5.47114 3.53917C5.27153 3.28404 4.98684 3.10918 4.66902 3.04651C4.3512 2.98384 4.02144 3.03753 3.73991 3.19778C3.45839 3.35804 3.24386 3.61417 3.13549 3.91945C3.02712 4.22472 3.03212 4.55879 3.14958 4.86068C3.24624 5.10829 3.41384 5.32187 3.63136 5.47463H3.62994ZM12.4697 14.7862H14.7848L14.7535 9.97266C14.7535 7.60355 13.2954 6.88728 11.9296 6.88728C11.4361 6.88136 10.9481 6.99236 10.5058 7.21122C10.0634 7.43007 9.67905 7.75055 9.38429 8.14644V7.07345H7.07061V14.789H9.38571V10.9277C9.36255 10.6892 9.38769 10.4486 9.45965 10.2201C9.53161 9.99155 9.64891 9.7799 9.80452 9.59775C9.96014 9.4156 10.1509 9.2667 10.3653 9.15994C10.5798 9.05319 10.8136 8.99076 11.0528 8.97641C11.9055 8.97641 12.4739 9.60883 12.4739 10.8595L12.4697 14.7862ZM3.21211 7.07061V14.7862H5.52721V7.07061H3.21211Z"
+                                />
+                            </svg>
+                        </a>
+                        <a
+                            href="https://www.instagram.com/"
+                            target="_blank"
+                            rel="nofollow"
+                            class="footer__social"
+                        >
+                            <svg
+                                class="footer__social-icon"
+                                width="18"
+                                height="18"
+                                viewBox="0 0 18 18"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <g clip-path="url(#clip0_2418_2232)">
+                                    <path
+                                        d="M9.00025 4.84496C6.70171 4.84496 4.8477 6.69939 4.8477 8.99844C4.8477 11.2975 6.70171 13.1519 9.00025 13.1519C11.2988 13.1519 13.1528 11.2975 13.1528 8.99844C13.1528 6.69939 11.2988 4.84496 9.00025 4.84496ZM9.00025 11.6987C7.51487 11.6987 6.30055 10.4878 6.30055 8.99844C6.30055 7.50911 7.51125 6.29814 9.00025 6.29814C10.4892 6.29814 11.6999 7.50911 11.6999 8.99844C11.6999 10.4878 10.4856 11.6987 9.00025 11.6987ZM14.2912 4.67506C14.2912 5.21368 13.8575 5.64385 13.3227 5.64385C12.7842 5.64385 12.3541 5.21006 12.3541 4.67506C12.3541 4.14006 12.7878 3.70628 13.3227 3.70628C13.8575 3.70628 14.2912 4.14006 14.2912 4.67506ZM17.0415 5.65831C16.9801 4.36057 16.6837 3.21104 15.7332 2.26395C14.7863 1.31686 13.6371 1.02044 12.3396 0.955372C11.0024 0.879459 6.99444 0.879459 5.65724 0.955372C4.36341 1.01682 3.21414 1.31324 2.26365 2.26034C1.31315 3.20743 1.02041 4.35696 0.955359 5.65469C0.879464 6.99219 0.879464 11.0011 0.955359 12.3386C1.0168 13.6363 1.31315 14.7858 2.26365 15.7329C3.21414 16.68 4.3598 16.9764 5.65724 17.0415C6.99444 17.1174 11.0024 17.1174 12.3396 17.0415C13.6371 16.9801 14.7863 16.6836 15.7332 15.7329C16.6801 14.7858 16.9765 13.6363 17.0415 12.3386C17.1174 11.0011 17.1174 6.9958 17.0415 5.65831ZM15.314 13.7737C15.0321 14.4822 14.4864 15.028 13.7744 15.3136C12.7083 15.7365 10.1784 15.6389 9.00025 15.6389C7.82206 15.6389 5.28861 15.7329 4.22608 15.3136C3.51772 15.0316 2.972 14.4858 2.68649 13.7737C2.26365 12.7073 2.36123 10.1769 2.36123 8.99844C2.36123 7.81999 2.26726 5.28597 2.68649 4.22321C2.96839 3.51469 3.51411 2.96885 4.22608 2.68328C5.29222 2.26034 7.82206 2.35794 9.00025 2.35794C10.1784 2.35794 12.7119 2.26395 13.7744 2.68328C14.4828 2.96523 15.0285 3.51108 15.314 4.22321C15.7368 5.28959 15.6393 7.81999 15.6393 8.99844C15.6393 10.1769 15.7368 12.7109 15.314 13.7737Z"
+                                    />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2418_2232">
+                                        <rect width="18" height="18" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/splide.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/header.js"></script>
+    </body>
+</html>

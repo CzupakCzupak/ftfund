@@ -1,0 +1,431 @@
+*,
+*:before,
+*:after {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  /* overflow-x: hidden; */
+}
+
+body {
+  position: relative;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+button {
+  outline: none;
+  font-size: inherit;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+img {
+  width: fit-content;
+  height: fit-content;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+/*------FLEX------ */
+
+.w-100 {
+  width: 100%;
+}
+
+.d-f {
+  display: flex;
+}
+
+.f-w {
+  flex-wrap: wrap;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.ai-fs {
+  align-items: flex-start;
+}
+
+.jc-e {
+  justify-content: flex-end;
+}
+
+.jc-s {
+  justify-content: flex-start;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.jc-b {
+  justify-content: space-between;
+}
+
+.fd-c {
+  flex-direction: column;
+}
+
+/* ------FONT WEIGHT------ */
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+/* ------MARGIN BOTTOM------ */
+
+.mb-128 {
+  margin-bottom: 128px;
+}
+
+.mb-109 {
+  margin-bottom: 109px;
+}
+
+.mb-104 {
+  margin-bottom: 104px;
+}
+
+.mb-76 {
+  margin-bottom: 76px;
+}
+
+.mb-72 {
+  margin-bottom: 72px;
+}
+
+.mb-68 {
+  margin-bottom: 68px;
+}
+
+.mb-65 {
+  margin-bottom: 65px;
+}
+
+.mb-64 {
+  margin-bottom: 64px;
+}
+
+.mb-59 {
+  margin-bottom: 59px;
+}
+
+.mb-52 {
+  margin-bottom: 52px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.mb-45 {
+  margin-bottom: 45px;
+}
+
+.mb-41 {
+  margin-bottom: 41px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-38 {
+  margin-bottom: 38px;
+}
+
+.mb-35 {
+  margin-bottom: 35px;
+}
+
+.mb-36 {
+  margin-bottom: 36px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-28 {
+  margin-bottom: 28px;
+}
+
+.mb-27 {
+  margin-bottom: 27px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-21 {
+  margin-bottom: 21px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-19 {
+  margin-bottom: 19px;
+}
+
+.mb-18 {
+  margin-bottom: 18px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-14 {
+  margin-bottom: 14px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
+}
+
+/* ------GAP------ */
+
+.gap-5 {
+  gap: 5px;
+}
+
+.gap-6 {
+  gap: 6px;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-12 {
+  gap: 12px;
+}
+
+.gap-13 {
+  gap: 13px;
+}
+
+.gap-14 {
+  gap: 14px;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+.gap-32 {
+  gap: 32px;
+}
+
+.gap-42 {
+  gap: 42px;
+}
+
+.gap-48 {
+  gap: 48px;
+}
+
+.gap-64 {
+  gap: 64px;
+}
+
+.gap-159 {
+  gap: 159px;
+}
+
+/*------TEXT ALIGN------ */
+
+.ta-c {
+  text-align: center;
+}
+
+.ta-r {
+  text-align: right;
+}
+
+/*------FONT SIZE------ */
+
+.fs-48 {
+  font-size: 48px;
+}
+
+.fs-36 {
+  font-size: 36px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-17 {
+  font-size: 17px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+/*------LINE HEIGHT------ */
+
+.lh-120p {
+  line-height: 120%;
+}
+
+.lh-48 {
+  line-height: 48px;
+}
+
+.lh-46 {
+  line-height: 46px;
+}
+
+.lh-30 {
+  line-height: 30px;
+}
+
+.lh-27 {
+  line-height: 27px;
+}
+
+.lh-26 {
+  line-height: 26px;
+}
+
+.lh-24 {
+  line-height: 24px;
+}
+
+.lh-22 {
+  line-height: 22px;
+}
+
+.lh-20 {
+  line-height: 20px;
+}
+
+/*------ADDITIONAL CLASSES------ */
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.img-width {
+  width: 100%;
+}
+
+.margin-auto {
+  display: block;
+  margin: 0 auto;
+}
+
+.rel {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+}

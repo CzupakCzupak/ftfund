@@ -1,0 +1,64 @@
+$text-big: 16px;
+$text-md: 18px;
+$text-sm: 16px;
+
+.heading-primary {
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 72px;
+    margin-bottom: 88px;
+}
+
+.heading-secondary {
+    color: $black;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px; /* 150% */
+    letter-spacing: 0.2px;
+}
+
+.heading-tertiary {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.heading-quaternary {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+.text-big {
+    font-size: $text-big;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.text-md {
+    font-size: $text-md;
+    line-height: 28px;
+}
+
+.text-sm {
+    font-size: $text-sm;
+    line-height: 28px;
+}
+
+.subheading {
+    color: $blue;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px; /* 175% */
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.heading {
+    color: $black;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px; /* 150% */
+    letter-spacing: 0.2px;
+}

@@ -1,0 +1,76 @@
+.btn {
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 16px;
+    line-height: 28px;
+    transition: all 0.3s;
+
+    &__blue-white {
+        background-color: $white-dark;
+        color: $blue;
+        font-weight: 600;
+        &:hover {
+            background-color: $gray-light;
+        }
+        &:active {
+            background-color: $blue;
+            color: $white;
+            transform: translateY(2px);
+        }
+        &:disabled {
+            background-color: $gray-4;
+            color: $gray;
+        }
+    }
+
+    &__white-blue {
+        background-color: $blue;
+        color: $white;
+        font-weight: 600;
+        &:hover {
+            background-color: $blue-dark;
+        }
+
+        &:active {
+            background-color: $white-dark;
+            color: $blue;
+            transform: translateY(2px);
+        }
+        &:disabled {
+            background-color: $gray-4;
+            color: $gray;
+        }
+    }
+
+    &-gap {
+        gap: 12px;
+        padding: 16px 24px 16px 32px;
+    }
+
+    &-hero2 {
+        gap: 12px;
+        justify-content: space-between;
+    }
+
+    &:active {
+        .hero__btn-svg {
+            fill: $white;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .btn {
+        font-size: 15px;
+        line-height: 20px; /* 133.333% */
+        padding: 14px 32px;
+        max-width: 249px;
+        justify-content: center;
+        width: 100%;
+        &-gap {
+            gap: 8px;
+        }
+    }
+}
