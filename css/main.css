@@ -1,3 +1,24 @@
+.mb-88 {
+  margin-bottom: 88px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.mb-104 {
+  margin-bottom: 104px;
+}
+
+.blue-underline {
+  color: #004bbc;
+  text-decoration: underline;
+}
+
+.textarea__label {
+  top: 16px;
+}
+
 .heading-primary {
   font-size: 52px;
   font-weight: 600;
@@ -892,7 +913,7 @@ img {
   align-items: center;
   gap: 22px;
 }
-.hero__page-1, .hero__page-2 {
+.hero__page {
   border-radius: 100%;
   width: 24px;
   height: 24px;
@@ -900,10 +921,10 @@ img {
   background-color: #8cc540;
   transition: all 0.3s;
 }
-.hero__page-1:hover, .hero__page-2:hover {
+.hero__page:hover {
   cursor: pointer;
 }
-.hero__page-1.active, .hero__page-2.active {
+.hero__page.active {
   border: 7px solid #8cc540;
 }
 .hero__swap, .hero__swap-2 {
@@ -1848,6 +1869,10 @@ img {
     margin-right: 21px;
     flex-wrap: wrap;
   }
+  .circle-left {
+    top: 8px;
+    left: 55px;
+  }
 }
 @media (max-width: 1300px) {
   .steps__section-heading {
@@ -2122,13 +2147,11 @@ img {
   }
   .hero__pagination {
     position: unset;
+    margin-bottom: 48px;
+    gap: 16px;
   }
   .hero__text {
     margin-bottom: 44px;
-  }
-  .hero__pagination {
-    margin-bottom: 48px;
-    gap: 16px;
   }
   .hero__btns {
     align-items: center;
@@ -2136,12 +2159,12 @@ img {
   .hero__image {
     margin-bottom: 42px;
   }
-  .hero__page-1, .hero__page-2 {
+  .hero__page {
     width: 11px;
     height: 11px;
     border: 2px solid #fff;
   }
-  .hero__page-1.active, .hero__page-2.active {
+  .hero__page.active {
     border-color: #8cc540;
   }
   .popup {
@@ -2284,7 +2307,7 @@ img {
   }
   .opinions {
     margin-bottom: 44px;
-    padding: 44px 16px;
+    padding: 44px 0 44px 16px;
   }
   .opinions__heading {
     margin-bottom: 32px;
@@ -2450,6 +2473,9 @@ img {
   .cta__btns {
     flex-direction: column;
   }
+  .cta__row {
+    margin-bottom: 52px;
+  }
   .conditions {
     margin-bottom: 44px;
   }
@@ -2547,24 +2573,4 @@ img {
   .reg__ex-parent::before {
     top: 14px;
   }
-}
-.mb-88 {
-  margin-bottom: 88px;
-}
-
-.mb-80px {
-  margin-bottom: 80px;
-}
-
-.mb-104 {
-  margin-bottom: 104px;
-}
-
-.blue-underline {
-  color: #004bbc;
-  text-decoration: underline;
-}
-
-.textarea__label {
-  top: 16px;
 }/*# sourceMappingURL=main.css.map */

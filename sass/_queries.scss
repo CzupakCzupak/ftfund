@@ -52,6 +52,13 @@
             flex-wrap: wrap;
         }
     }
+
+    .circle {
+        &-left {
+            top: 8px;
+            left: 55px;
+        }
+    }
 }
 
 @media (max-width: 1300px) {
@@ -393,15 +400,12 @@
 
         &__pagination {
             position: unset;
+            margin-bottom: 48px;
+            gap: 16px;
         }
 
         &__text {
             margin-bottom: 44px;
-        }
-
-        &__pagination {
-            margin-bottom: 48px;
-            gap: 16px;
         }
 
         &__btns {
@@ -412,8 +416,7 @@
             margin-bottom: 42px;
         }
 
-        &__page-1,
-        &__page-2 {
+        &__page {
             width: 11px;
             height: 11px;
             border: 2px solid $white;
@@ -585,7 +588,7 @@
 
     .opinions {
         margin-bottom: 44px;
-        padding: 44px 16px;
+        padding: 44px 0 44px 16px;
         &__heading {
             margin-bottom: 32px;
         }
@@ -779,6 +782,9 @@
 
         &__btns {
             flex-direction: column;
+        }
+        &__row {
+            margin-bottom: 52px;
         }
     }
 

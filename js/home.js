@@ -1,20 +1,12 @@
 // Hero slider
-const heroImg = document.querySelector(".hero__swap-js"),
-    circleLeft = document.querySelector(".circle__left-js"),
+const circleLeft = document.querySelector(".circle__left-js"),
     circleRight = document.querySelector(".circle__right-js"),
-    heroImgSec = document.querySelector(".hero__swap-js-2"),
     spinningHero = document.querySelector(".spinning__hero-js"),
-    heroText1 = document.querySelector(".hero__text-1"),
-    heroText2 = document.querySelector(".hero__text-2"),
-    heroTextCont = document.querySelector(".hero__text"),
-    page1 = document.querySelector(".hero__page-1"),
-    page2 = document.querySelector(".hero__page-2"),
-    paginations = [page1, page2];
+    heroImgs = document.querySelectorAll(".hero__swap-js"),
+    heroTexts = document.querySelectorAll(".hero__text-js"),
+    paginationContainer = document.querySelector(".hero__pagination-js");
 
-const heroImgs = document.querySelectorAll(".hero__swap-js");
-const heroTexts = document.querySelectorAll(".hero__text-js");
 heroTexts.forEach((item) => {
-    console.log(item);
     if (item.dataset.text == 0) {
         item.style.maxHeight = `${item.scrollHeight}px`;
     } else {
@@ -22,21 +14,44 @@ heroTexts.forEach((item) => {
     }
 });
 
-const slide2 = () => {
-    const activeText = document.querySelector(".hero__text.active");
-    const activeSlide = document.querySelector(".hero__swap.active");
+const paginationControls = () => {
+    for (i = 0; i < heroImgs.length; i++) {
+        const page = document.createElement("div");
+        page.classList.add("hero__page-js");
+        page.classList.add("hero__page");
+        page.dataset.page = i;
+        if (page.dataset.page == 0) {
+            page.classList.add("active");
+        }
+        paginationContainer.appendChild(page);
+    }
+};
+
+paginationControls();
+
+const slide = () => {
+    const activeText = document.querySelector(".hero__text-js.active");
+    const activeSlide = document.querySelector(".hero__swap-js.active");
+    const activePagination = document.querySelector(".hero__page-js.active");
     let nextSlideNumb = +activeSlide.dataset.numb + +1;
     let nextTextNumb = +activeText.dataset.text + +1;
+    let nextPaginationNumb = +activePagination.dataset.page + +1;
     if (nextSlideNumb == heroImgs.length) {
         nextSlideNumb = 0;
         nextTextNumb = 0;
+        nextPaginationNumb = 0;
     }
     const nextSlide = document.querySelector(`[data-numb="${nextSlideNumb}"]`);
     const nextText = document.querySelector(`[data-text="${nextTextNumb}"]`);
+    const nextPagination = document.querySelector(
+        `[data-page="${nextPaginationNumb}"]`
+    );
+    activePagination.classList.toggle("active");
     activeText.classList.toggle("active");
     activeText.style.maxHeight = 0;
     activeSlide.classList.toggle("active");
 
+    nextPagination.classList.toggle("active");
     nextText.classList.toggle("active");
     nextText.style.maxHeight = `${nextText.scrollHeight}px`;
     nextSlide.classList.toggle("active");
@@ -46,49 +61,50 @@ const slide2 = () => {
     spinningHero.classList.toggle("active");
 };
 
-// slide2();
-let myInterval = setInterval(slide2, 3000);
+const pages = document.querySelectorAll(".hero__page-js");
 
-// heroText1.style.maxHeight = `${heroText1.scrollHeight}px`;
-const slide = () => {
-    if (heroText1.classList.contains("active")) {
-        heroText1.style.maxHeight = 0;
-        heroText2.style.maxHeight = `${heroText2.scrollHeight}px`;
-        heroText1.classList.toggle("active");
-        heroText2.classList.toggle("active");
-        heroImg.classList.toggle("active");
-        heroImgSec.classList.toggle("active");
-        spinningHero.classList.add("active");
-        circleLeft.classList.toggle("active");
-        circleRight.classList.toggle("active");
-        page1.classList.toggle("active");
-        page2.classList.toggle("active");
-    } else {
-        heroText2.style.maxHeight = 0;
-        heroText1.style.maxHeight = `${heroText1.scrollHeight}px`;
-        heroText2.classList.toggle("active");
-        heroText1.classList.toggle("active");
-        heroImg.classList.toggle("active");
-        heroImgSec.classList.toggle("active");
+const pagination = (e) => {
+    const activeText = document.querySelector(".hero__text-js.active");
+    const activeSlide = document.querySelector(".hero__swap-js.active");
+    const activePagination = document.querySelector(".hero__page-js.active");
+
+    activeText.classList.toggle("active");
+    activeText.style.maxHeight = 0;
+
+    activeSlide.classList.toggle("active");
+    activePagination.classList.toggle("active");
+
+    const nextPagination = e.target.closest(".hero__page-js");
+    const nextNumb = nextPagination.dataset.page;
+    const nextSlide = document.querySelector(`[data-numb="${nextNumb}"]`);
+    const nextText = document.querySelector(`[data-text="${nextNumb}"]`);
+
+    if (parseInt(nextNumb) % 2 == 0) {
+        console.log(circleRight);
+        circleRight.classList.remove("active");
+        circleLeft.classList.remove("active");
         spinningHero.classList.remove("active");
-        circleRight.classList.toggle("active");
-        circleLeft.classList.toggle("active");
-        page1.classList.toggle("active");
-        page2.classList.toggle("active");
+    } else {
+        console.log(circleLeft);
+        circleRight.classList.add("active");
+        circleLeft.classList.add("active");
+        spinningHero.classList.add("active");
     }
+
+    nextText.style.maxHeight = `${nextText.scrollHeight}px`;
+    nextSlide.classList.toggle("active");
+    nextText.classList.toggle("active");
+    nextPagination.classList.toggle("active");
+
+    clearInterval(myInterval);
+    myInterval = setInterval(slide, 3000);
 };
 
-// let myInterval = setInterval(slide, 3000);
-
-paginations.forEach((item) => {
-    item.addEventListener("click", () => {
-        if (!item.classList.contains("active")) {
-            slide();
-        }
-        clearInterval(myInterval);
-        myInterval = setInterval(slide, 3000);
-    });
+pages.forEach((item) => {
+    item.addEventListener("click", pagination);
 });
+
+let myInterval = setInterval(slide, 3000);
 
 // Cta form
 const ctaDropdown = document.querySelector(".cta__dropdown");
