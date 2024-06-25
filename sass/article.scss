@@ -112,10 +112,6 @@
         justify-content: space-between;
         width: 100%;
         margin-bottom: 26px;
-        &-prev {
-        }
-        &-next {
-        }
 
         &-prev,
         &-next {
@@ -137,6 +133,13 @@
 .similar {
     .heading {
         margin-bottom: 80px;
+    }
+
+    &__conditions {
+        &-container {
+            max-width: 1432px;
+            margin: 0 auto;
+        }
     }
 
     &__splide {
@@ -172,22 +175,27 @@
             line-height: 34px; /* 154.545% */
         }
     }
-    .splide__arrows {
-        position: absolute;
-        right: 0;
-        top: -95px;
-        display: flex;
-        gap: 15px;
-    }
-    .splide__arrow {
-        position: unset;
-        transform: unset;
-        padding: 18px;
-        width: 60px;
-        height: 60px;
-        border-radius: 4px;
-        background-color: $white;
-        border: 1px solid $gray-3;
+    .splide {
+        &__arrow {
+            position: unset;
+            transform: unset;
+            padding: 18px;
+            width: 60px;
+            height: 60px;
+            border-radius: 4px;
+            background-color: $white;
+            border: 1px solid $gray-3;
+            &:hover {
+                cursor: pointer;
+            }
+            &s {
+                position: absolute;
+                right: 0;
+                top: -95px;
+                display: flex;
+                gap: 15px;
+            }
+        }
     }
 }
 
@@ -257,16 +265,23 @@
         &__list-item {
             align-items: start;
         }
-        &__pagination-prev,
-        &__pagination-next {
-            font-size: 16px;
-            line-height: 28px;
+        &__pagination {
+            &-prev,
+            &-next {
+                font-size: 16px;
+                line-height: 28px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
         }
     }
 
     .similar {
-        .splide__arrows {
-            display: none;
+        .splide {
+            &__arrows {
+                display: none;
+            }
         }
         .heading {
             margin-bottom: 40px;

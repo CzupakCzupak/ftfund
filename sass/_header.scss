@@ -36,8 +36,6 @@
             align-items: center;
             gap: 32px;
         }
-        &-contact {
-        }
     }
 
     &__nav {
@@ -48,16 +46,24 @@
     &__hamburger {
         display: none;
     }
-}
 
-.vertical-line {
-    height: 24px;
-    width: 1px;
-    background-color: $white-dark;
-    margin: 0 24px;
+    &__icon {
+        fill: $blue;
+    }
+
+    &__line {
+        &-vertical {
+            height: 24px;
+            width: 1px;
+            background-color: $white-dark;
+            margin: 0 24px;
+        }
+    }
 }
 
 .dropdown {
+    padding: 0 11px 0 16px;
+
     height: 100%;
     display: flex;
     align-items: center;
@@ -92,7 +98,11 @@
         a {
             display: inline-block;
             padding: 8px 16px;
-            // line-height: 30px;
+        }
+        &-item {
+            &:hover {
+                background-color: $white-dark;
+            }
         }
     }
     svg {
@@ -106,13 +116,8 @@
             display: flex;
         }
     }
-}
 
-.accordion-nav,
-.phone-nav {
-    fill: $blue;
-}
-
-.dropdown {
-    padding: 0 11px 0 16px;
+    &__icon {
+        fill: $blue;
+    }
 }

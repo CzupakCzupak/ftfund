@@ -49,11 +49,6 @@
         padding: 16px 24px 16px 32px;
     }
 
-    &-hero2 {
-        gap: 12px;
-        justify-content: space-between;
-    }
-
     &:active {
         .hero__btn-svg {
             fill: $white;

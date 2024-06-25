@@ -1,13 +1,13 @@
-.mb-88 {
-    margin-bottom: 88px;
-}
-
-.mb-80 {
-    margin-bottom: 80px;
-}
-
-.mb-104 {
-    margin-bottom: 104px;
+.mb {
+    &-88 {
+        margin-bottom: 88px;
+    }
+    &-80 {
+        margin-bottom: 80px;
+    }
+    &-104 {
+        margin-bottom: 104px;
+    }
 }
 
 .blue-underline {
@@ -17,4 +17,9 @@
 
 .textarea__label {
     top: 16px;
+}
+
+.m-auto-sides {
+    margin-left: auto;
+    margin-right: auto;
 }

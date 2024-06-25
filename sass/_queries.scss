@@ -1,38 +1,11 @@
 @media (max-width: 1460px) {
-    .help,
-    .hero,
-    .steps,
-    .stats,
-    .footer,
-    .header,
-    .loans,
-    .cta {
-        .container {
-            padding: 0 16px;
-        }
+    .pad-16 {
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
-    .stats {
-        &__splide {
-            padding-left: 16px;
-        }
-    }
-
-    .opinions {
-        &__subheading,
-        &__heading {
-            padding-left: 16px;
-        }
-        &__splide {
-            padding-left: 16px;
-        }
-    }
-
-    .conditions {
-        &__box {
-            padding-left: 16px;
-            padding-right: 16px;
-        }
+    .pad-l-16 {
+        padding-left: 16px;
     }
 
     .loans {
@@ -128,9 +101,11 @@
         &__side-r {
             display: none;
         }
-    }
-    .hidden-mail {
-        display: block;
+        &__mail {
+            &-hidden {
+                display: block;
+            }
+        }
     }
 }
 
@@ -154,23 +129,24 @@
         list-style-type: none;
     }
 
-    .vertical-line {
-        display: none;
-    }
-
-    .tel-nav {
-        color: $white;
-    }
-
-    .phone-nav,
-    .accordion-nav {
-        fill: $white;
-    }
     .header {
         height: 96px;
 
+        &__tel {
+            color: $white;
+        }
+
+        &__line {
+            &-vertical {
+                display: none;
+            }
+        }
+
         &__menu {
             padding: unset;
+        }
+        &__icon {
+            fill: $white;
         }
 
         &__shadow {
@@ -226,15 +202,17 @@
 
         &__hamburger {
             display: block;
-            .hamburger-x {
+            &-x {
                 display: none;
             }
             &.active {
-                .hamburger-x {
-                    display: block;
-                }
-                .hamburger-primary {
-                    display: none;
+                .header__hamburger {
+                    &-primary {
+                        display: none;
+                    }
+                    &-x {
+                        display: block;
+                    }
                 }
             }
         }
@@ -245,8 +223,11 @@
         align-items: flex-start;
         padding: 0;
         color: $white;
-
         width: 100%;
+
+        &__icon {
+            fill: $white;
+        }
 
         &__desc {
             width: 100%;
@@ -399,13 +380,16 @@
         }
 
         &__pagination {
+            height: 41px;
             position: unset;
             margin-bottom: 48px;
             gap: 16px;
         }
 
         &__text {
-            margin-bottom: 44px;
+            &.active {
+                margin-bottom: 44px;
+            }
         }
 
         &__btns {
@@ -459,6 +443,12 @@
         }
     }
 
+    .heading {
+        font-size: 40px;
+        line-height: 60px; /* 150% */
+        letter-spacing: 0.2px;
+    }
+
     .heading-primary {
         font-size: 26px;
         font-weight: 600;
@@ -497,7 +487,6 @@
             width: 20px;
             height: 20px;
         }
-        // margin-bottom: 44px;
     }
 
     .circle {
@@ -532,7 +521,7 @@
             height: 20px;
             transform: translate(-50%, 100%);
         }
-        .side-svg {
+        &__svg-side {
             width: 123px;
             height: 123px;
         }
@@ -727,6 +716,13 @@
             line-height: 30px; /* 150% */
             letter-spacing: 0.148px;
             margin-bottom: 32px;
+            &-sm {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 28px; /* 155.556% */
+                letter-spacing: 0.148px;
+                margin-bottom: 20px;
+            }
         }
 
         &__desc-text {
@@ -743,6 +739,9 @@
 
     .cta {
         &__heading {
+            font-size: 20px;
+            line-height: 30px; /* 150% */
+            letter-spacing: 0.148px;
             margin-bottom: 32px;
         }
         .container {

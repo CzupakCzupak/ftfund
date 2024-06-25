@@ -3,8 +3,8 @@ const hamburger = document.querySelector(".hamburger-js");
 const nav = document.querySelector(".nav-js");
 const dropdownNav = document.querySelector(".dropdown-js");
 const anchors = document.querySelectorAll("a[href]");
-const hamburgerShadow = document.querySelector(".header__shadow");
-const header = document.querySelector(".header");
+const hamburgerShadow = document.querySelector(".header__shadow-js");
+const header = document.querySelector(".header-js");
 
 const hamburgerToggle = () => {
     hamburger.classList.toggle("active");
@@ -29,6 +29,15 @@ anchors.forEach((item) =>
         hamburgerRemove();
     })
 );
+
+const footerUp = document.querySelector(".footer__up-js");
+footerUp.addEventListener("click", () => {
+    if (window.innerWidth >= 1200) {
+        setTimeout(function () {
+            window.scrollTo(0, 0);
+        }, 2);
+    }
+});
 
 hamburgerShadow.addEventListener("click", hamburgerToggle);
 hamburger.addEventListener("click", hamburgerToggle);

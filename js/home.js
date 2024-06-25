@@ -80,12 +80,10 @@ const pagination = (e) => {
     const nextText = document.querySelector(`[data-text="${nextNumb}"]`);
 
     if (parseInt(nextNumb) % 2 == 0) {
-        console.log(circleRight);
         circleRight.classList.remove("active");
         circleLeft.classList.remove("active");
         spinningHero.classList.remove("active");
     } else {
-        console.log(circleLeft);
         circleRight.classList.add("active");
         circleLeft.classList.add("active");
         spinningHero.classList.add("active");
@@ -151,14 +149,18 @@ new Splide(".opinions__splide", {
     pagination: false,
     gap: "32px",
     mediaQuery: "max",
+    perMove: 3,
+
     breakpoints: {
         1300: {
             perpage: 3,
         },
         1100: {
+            perMove: 2,
             perpage: 2,
         },
         640: {
+            perMove: 1,
             perpage: 1,
             arrows: false,
         },
@@ -180,16 +182,11 @@ submitCta.addEventListener("click", (e) => {
     // Name and Surname validation
 
     const nameParent = regExName.closest(".reg__ex-parent-js");
-    if (
-        String(regExName.value)
-            .toLowerCase()
-            .match(/^[a-zA-Z]+ [a-zA-Z]+$/)
-    ) {
+    if (regExName.value.length > 0) {
         right(nameParent);
         controlValue++;
     } else {
         wrong(nameParent);
-        e.preventDefault();
     }
 
     // Mail validation

@@ -1,11 +1,9 @@
 .mb-88 {
   margin-bottom: 88px;
 }
-
 .mb-80 {
   margin-bottom: 80px;
 }
-
 .mb-104 {
   margin-bottom: 104px;
 }
@@ -17,6 +15,11 @@
 
 .textarea__label {
   top: 16px;
+}
+
+.m-auto-sides {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .breadcrumbs {
@@ -138,6 +141,10 @@
 .similar .heading {
   margin-bottom: 80px;
 }
+.similar__conditions-container {
+  max-width: 1432px;
+  margin: 0 auto;
+}
 .similar__splide {
   margin-bottom: 155px;
 }
@@ -169,13 +176,6 @@
   font-weight: 600;
   line-height: 34px; /* 154.545% */
 }
-.similar .splide__arrows {
-  position: absolute;
-  right: 0;
-  top: -95px;
-  display: flex;
-  gap: 15px;
-}
 .similar .splide__arrow {
   position: unset;
   transform: unset;
@@ -185,6 +185,16 @@
   border-radius: 4px;
   background-color: #fff;
   border: 1px solid #dee1e5;
+}
+.similar .splide__arrow:hover {
+  cursor: pointer;
+}
+.similar .splide__arrows {
+  position: absolute;
+  right: 0;
+  top: -95px;
+  display: flex;
+  gap: 15px;
 }
 
 .conditions__interests {
@@ -244,6 +254,9 @@
   .article__pagination-prev, .article__pagination-next {
     font-size: 16px;
     line-height: 28px;
+  }
+  .article__pagination-prev:hover, .article__pagination-next:hover {
+    cursor: pointer;
   }
   .similar .splide__arrows {
     display: none;
